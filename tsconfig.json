@@ -13,7 +13,13 @@
     "skipLibCheck": true,
     "types": ["vite/client"],
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@components/*": ["src/app/components/*"],
+      "@features/*": ["src/app/features/*"],
+      "@store/*": ["src/app/store/*"],
+      "@constants/*": ["src/app/constants/*"],
+      "@interfaces/*": ["src/app/interfaces/*"],
+      "@enums/*": ["src/app/enums/*"],
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]

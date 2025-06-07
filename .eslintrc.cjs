@@ -21,7 +21,15 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [['@', './src']],
+        map: [
+          ['@', './src'],
+          ['@features', './src/app/features'],
+          ['@store', './src/app/store'],
+          ['@components', './src/app/components'],
+          ['@constants', './src/app/constants'],
+          ['@interfaces', './src/app/interfaces'],
+          ['@enums', './src/app/enums']
+        ],
         extensions: ['.ts', '.tsx', '.js', '.jsx', '.vue']
       }
     }

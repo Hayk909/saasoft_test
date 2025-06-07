@@ -1,4 +1,10 @@
 {
-  "home_title": "Home page",
-  "main_title": "Accounts"
+  "home": {
+    "title": "Home page"
+  },
+  "accounts": {
+    "title": "Accounts",
+    "note": "To specify multiple labels for one login/password pair, use the delimiter ;",
+    "add_tooltip": "Click on the icon to add a new account."
+  }
 }

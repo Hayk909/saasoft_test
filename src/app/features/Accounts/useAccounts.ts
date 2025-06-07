@@ -1,6 +1,7 @@
 import { useNotification } from 'naive-ui';
 import { useI18n } from 'vue-i18n';
 
+import { AccountTypes } from '@/app/enums/Accounts';
 import { markParser } from '@/app/helpers';
 import { Account, Mark } from '@/app/interfaces/Accounts';
 import { useAccountsStore } from '@store/accounts';
@@ -56,15 +57,25 @@ export const useAccounts = () => {
   const updateAccountHandler = (id: Account['id'], data: Partial<Account>) => {
     try {
       let mark: Mark[] = [];
-      console.log(data, ' data');
 
       if (data.markModel) {
         mark = markParser(data.markModel);
       }
 
-      console.log(mark, 'mark');
+      const resetedPassword =
+        data.type === AccountTypes.LDAP
+          ? {
+              password: null
+            }
+          : {};
 
-      updateAccount(id, { ...data, mark });
+      const newData = {
+        ...data,
+        mark,
+        ...resetedPassword
+      };
+
+      updateAccount(id, newData);
     } catch (err) {
       console.error(err);
 

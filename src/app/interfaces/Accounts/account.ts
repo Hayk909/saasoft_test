@@ -10,6 +10,6 @@ export interface Account {
   mark: Mark[];
   type: AccountTypes | null;
   login: string;
-  password: string;
+  password: string | null;
   isShowPassword: boolean;
 }

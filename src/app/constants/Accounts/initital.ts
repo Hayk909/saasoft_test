@@ -13,6 +13,6 @@ export const inititalCreateAccountData = (): Account => ({
   mark: [{ text: '' }],
   type: null,
   login: '',
-  password: '',
+  password: null,
   isShowPassword: false
 });

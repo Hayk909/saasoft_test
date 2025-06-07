@@ -17,7 +17,15 @@
 <script setup lang="ts">
 import { AddCircleOutline } from '@vicons/ionicons5';
 
+import { inititalCreateAccountData } from '@/app/constants/Accounts';
+import { useAccountsForm } from '@/app/features/Accounts';
+
+// const { addAccountHandler } = useAccounts();
+const { push } = useAccountsForm();
+
 const addAccount = () => {
-  console.log('addAccounts');
+  const newAccountData = inititalCreateAccountData();
+
+  push(newAccountData);
 };
 </script>

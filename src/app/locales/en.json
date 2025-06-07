@@ -1,10 +1,34 @@
 {
   "home": {
-    "title": "Home page"
+    "title": "Home Page",
+    "redirect_accounts": "Go to Accounts Page"
   },
   "accounts": {
     "title": "Accounts",
-    "note": "To specify multiple labels for one login/password pair, use the delimiter ;",
-    "add_tooltip": "Click on the icon to add a new account."
+    "note": "To specify multiple tags for one login/password pair, use the separator: ;",
+    "add_tooltip": "Click the icon to add a new account.",
+    "table": {
+      "marks": "Tags",
+      "type": "Account Type",
+      "login": "Login",
+      "password": "Password",
+      "validation": {
+        "type": "Please select a type",
+        "login": "Please enter a login",
+        "password": "Please enter a password",
+        "password_length": "Minimum 6 characters"
+      },
+      "no_data": "No data"
+    },
+    "types": {
+      "local": "Local",
+      "ldap": "LDAP"
+    }
+  },
+  "notification": {
+    "error": "An error occurred, please try again later.",
+    "success_add": "You have successfully added a new account!",
+    "success_remove": "You have successfully removed the account!",
+    "success_update": "You have successfully updated the account!"
   }
 }

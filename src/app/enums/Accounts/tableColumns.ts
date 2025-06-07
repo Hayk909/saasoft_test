@@ -1,5 +1,5 @@
 export enum TableColumns {
-  MARKS = 'marks',
+  MARK = 'markModel',
   TYPE = 'type',
   LOGIN = 'login',
   PASSWORD = 'password'

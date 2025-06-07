@@ -3,15 +3,17 @@ import { RouteRecordRaw } from 'vue-router';
 import Accounts from '@/views/Accounts.vue';
 import HomePage from '@/views/Home.vue';
 
+import { AppRoutes, AppRoutesName } from '../enums/Common';
+
 export const routes: RouteRecordRaw[] = [
   {
-    path: '/',
-    name: 'home',
+    path: AppRoutes.HOME,
+    name: AppRoutesName.HOME,
     component: HomePage
   },
   {
-    path: '/accounts',
-    name: 'accounts',
+    path: AppRoutes.ACCOUNTS,
+    name: AppRoutesName.ACCOUNTS,
     component: Accounts
   }
 ];

@@ -3,7 +3,7 @@ import { TableColumn } from '@interfaces/Accounts';
 
 export const tableColumns: Readonly<TableColumn[]> = [
   {
-    key: TableColumns.MARKS,
+    key: TableColumns.MARK,
     title: 'table.marks'
   },
   {

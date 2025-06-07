@@ -1,11 +1,5 @@
 <template>
-  <RouterView />
+  <n-notification-provider>
+    <RouterView />
+  </n-notification-provider>
 </template>
-
-<script setup lang="ts">
-// Ничего не нужно пока
-</script>
-
-<style scoped>
-/* Можно добавить глобальные стили или импортировать их */
-</style>
